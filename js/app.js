@@ -80,9 +80,10 @@ Player.prototype.update = function(){
 	else if (this.ctlKey === 'down' && this.y != 400){
         this.y = this.y + 50;
     }
+	// Reseting control variable
     this.ctlKey = null;
     
-    //If on water, reset
+    // Touching water resets player
     if(this.y < 25){
         this.reset();
 	}
